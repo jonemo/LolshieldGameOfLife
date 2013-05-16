@@ -40,8 +40,8 @@ void loop() {
 // returns any pixel from the previous generation given
 // line and column count, takes care of wraparound
 byte getPrev (int led, int line) {
-  while (led < 0) led += 13; // there's probably a better (maybe bitshifty?) way of doing this, think about it some time
-  if (led > 13) led = led % 13;
+  while (led < 0) led += 14; // there's probably a better (maybe bitshifty?) way of doing this, think about it some time
+  if (led > 13) led = led % 14;
   while (line < 0) line += 9; // see comment two lines above
   if (line > 8) line = line % 9;
   
